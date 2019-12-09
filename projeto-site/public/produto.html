@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+<link rel="icon" type="image/jpg" href="imagens/logo.png">
+
+<link rel="stylesheet" href="estilo/produto.css">
+<link rel="stylesheet" href="estilo/header.css">
+<link rel="stylesheet" href="estilo/footer.css">
+
+<script type="text/javascript" src="scripts/logado.js"></script>
+
+<title>Produto</title>
+</head>
+
+<body>
+    <div id="tudo" style="display: none">
+    
+        <div class="começo">
+            <img class="logo fade" src="imagens/Logo.png" alt="logo">
+        </div>
+        
+        <header>
+            <nav>
+                <ul>
+                    <li id="homezinho" style="display:none"><a href="index.html">Home</a></li>
+                    <li id="produtinho" style="display:none"><a href="produto.html">Produto</a></li>
+                    <li id="contatinho" style="display:none"><a href="contato.html">Equipe</a></li>
+                    <li id="calculadorinha" style="display:none"><a href="calculadora.html">Simulador Financeiro</a></li>
+                    <li id="nodezinho" style="display:none"><a href="dash.html">Dashboard</a></li>
+                    <li id="cadastrinho" style="display:none"><a href="cadastro.html">Cadastro</a></li>
+                    <li id="loginzinho" style="display:none"><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header> <br>
+ <br>
+
+    <div class="slide"> 
+        <img class="mySlides fade" src="imagens/imagem1.jpg">
+        <img class="mySlides fade" src="imagens/imagem2.jpg">
+    </div>
+    <div class="botoes_slide">
+        <button class="button1" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button2" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+<div class="coluna1">
+    <div class="img1"><img class="foto_1" src="imagens/imagem3.jpg"></div>
+    <div class="texto_insu">
+            <h2>Um pouco sobre a insulina...</h2> <br>
+    <p>
+        A insulina é um hormônio que é produzido através de um órgão que se chama pâncreas,
+        que a partir dessa produção é enviado energia e controle de glicose para o corpo-humano. <br> 
+        Esse hormônio permite a entrada de glicose nas células, por exemplo, em certo momento o organismo
+        precisa de um controle de açúcar no sangue. 
+        Com a insulina tem esse controle necessário.<br>
+        O diabético toma a insulina diariamente, mas se aplicando via injeção.<br>
+    </p> 
+    </div>
+</div>
+
+<div class="coluna2">
+    <div class="texto_diabetes">
+        <h2>Diabetes Tipo 1 e 2</h2><br>
+        <p>
+            A diabetes é uma doença que afeta em torno de 422 milhões no mundo, sendo esses
+            dados só no ano de 2014 atualmente cresceu em torno de 60% se comparado aos anos 
+            de 1980 que tinha 108 milhões de pessoas diabéticas no país.
+        </p>
+        <p>
+            Infelizmente até 2030 é provável que cresça muito mais os casos de diabetes,que chegará 
+            a um custo de aproximadamente R$406 bilhões.Essa doença se divide em duas categorias:<br>
+        </p>
+        <p>  
+            <b>Diabetes tipo 1:</b> O pâncreas não funciona e nem produz mais insulina, 
+            trazendo como consequênciao o fato de os diabéticos terem que aplicar, através de injeção,
+            a insulina, diariamente, tendo também que ter um certo controle na alimentação.<br>
+            O diabético precisa de hora certa para comer, evitar massas, doces, bebidas alcoólicas,
+            medir a glicose e tomar a insulina corretamente. O mal descuido pode causar cegueira,
+            amputação dos membros do corpo e até ao óbito.
+        </p>
+        <p>
+            <b>Diabetes tipo 2:</b> O pâncreas não funciona muito bem gerando pouca insulina,
+            assim o diabético terá que fazer um tratamento mais intensivo com cuidados na alimentação, 
+            em contrapartida muitos casos não chegam a se aplicar a injeção.
+    </div>
+    <div class="img2"><img src="imagens/diabetes.jpg" alt="diabetes"></div>
+</div>
+
+            <footer>
+            <div class="localização">
+                <p>
+                    São Paulo <br>
+                    Telefone SP: (11) XXXX-XXXX <br>
+                    Email: <br>
+                    techdevsix@bandtec.com.br
+                </p> 
+                <p>
+                    TechDev6 - São Paulo <br>
+                    Rua Haddock Lobo,595 Cerqueira Cesar - São Paulo/SP
+                </p>
+            </div>
+            <div class="texto_fim">Todos os direitos reservados</div> 
+            <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2862323672266!2d-46.66372668533753!3d-23.558161267358525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2a5270055%3A0x3c7ea4f4c7d51fb6!2sRua%20Haddock%20Lobo%2C%20595%20-%20Cerqueira%20C%C3%A9sar%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001414-002!5e0!3m2!1spt-BR!2sbr!4v1570480919396!5m2!1spt-BR!2sbr" 
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script type="text/javascript" src="scripts/helpdesk.js"></script>

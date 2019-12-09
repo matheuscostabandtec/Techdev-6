@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora TechDev6</title>
+    <link rel="stylesheet" type="text/css" href="./calculadora.css">
+</head>
+<body>
+        
+
+
+
+    <div class="centro">
+   <div class="fundo">
+    <h1 class="letra">Simulador financeiro</h1>
+
+
+    <h3 class="letra">Quantos medicamentos são desperdiçados p/ mês <input type="text" id="desperdicio"></h2>
+    <h3 class="letra">Preço dos medicamentos <input type="text" id="valor"></h2> <br>
+
+    <button onclick="calcular()">Calcular</button> <br>
+
+    <div id="div" style="color: white;"></div>
+
+</div>
+</div>
+</body>
+</html>
+<script>
+function calcular() {
+var total= Number(desperdicio.value) * Number(valor.value);
+var economia = total - 299.90;
+div.innerHTML = `<br>O teu gasto mensal com medicamentos é R$ ${total.toFixed(2)}. 
+Por apenas R$299.90 por mês, você economizará R$ ${economia.toFixed(2)}!`;
+}
+
+</script>

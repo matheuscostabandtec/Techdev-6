@@ -1,0 +1,27 @@
+html{
+    background: linear-gradient(-15deg, rgb(50, 120, 190), rgb(70, 140, 210), 
+    rgb( 90, 160, 230), rgb( 110, 180, 250), rgb( 160, 200, 255), rgb( 255, 255, 255)) center fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    -webkit-background-size:cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.fundo{
+    background-color: rgba(0, 0, 0, 0.575); 
+    padding: 10px;
+    border: 1px;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+        
+}
+.letra{
+    color: white;
+}
+.centro{
+    margin-top: 130px;
+    margin-bottom: 15px;
+}
+

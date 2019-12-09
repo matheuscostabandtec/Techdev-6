@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="styleLog.css">
+</head>
+<body>
+        <form>
+            <h1>Login</h1>
+            <div class="inset">
+                <p>
+                  <label for="email">E-mail:</label>
+                  <input type="text" autofocus placeholder="Insira seu e-mail de usuário" name="email" id="email">
+                </p>
+                <p>
+                  <label for="senha">Senha:</label>
+                  <input type="password" placeholder="Insira sua senha de usuário" name="senha" id="senha">
+                </p>
+                <p>
+                  <input type="checkbox" name="lembrar" id="lembrar">
+                  <label for="lembrar">Lembrar Usuário</label>
+                </p>
+            </div>
+                <p class="p-container">
+                  <!-- <span>Esqueceu sua senha?</span> -->
+                  <a class="esqueceuSenha" href="#">Esqueceu sua senha?</a>
+                  
+                  <button href="index.html" type="button" class="entrar" onclick="entrar()">Entrar</button>
+                  <br><br><br>
+                  <a class="esqueceuSenha" href="index.html"> Voltar ao início</a>
+                </p>
+
+        </form>
+        
+</body>
+</html>
+
+<script>
+
+  function entrar(){
+
+    if (email.value.endsWith == '@bandtec.com.br' || email.endsWith == '@hotmail.com' || email.endsWith == '@gmail.com.br' || 
+    email.endsWith == '@outlook.com.br' || email.endsWith == '@yahoo.com.br'){
+
+      alert ('Usuário Cadastrado com sucesso!');
+
+    }
+    
+    else{
+
+      alert('Insira um domínio válido para o e-mail de usuário!');
+
+    }
+
+  }
+
+
+
+</script>

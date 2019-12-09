@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechDev6 - Usando a tecnologia para mudar a vida</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./estilo.css">
+</head>
+<body onload="logar()">
+
+	<div id="area_cabecalho">
+		
+		<div id="area-logo">
+				
+			<h1>Tech<span class="branco"> Dev6</span></h1>
+		</div>		
+	
+	</div>
+	<div>
+		<ul class="header">	
+			
+				<div id="area-menu">
+				
+			<li id="nodezinho" style="display:none"><a href="./node.html">Node</a></li>			
+			<li id="calc" style="display:none"><a href="./calculadora.html">Calculadora</a></li>		
+			<li><a href="./contato.html">Contato</a></li>
+			<li><a 	href="./produto.html">Produto</a></li>
+			<li><a href="./cadastro.html">Cadastro</a></li>	
+			<li><a href="./login.html">Login</a></li>
+			<li><a href="./index.html">Home</a></li>
+
+				</div>	
+		</ul> 
+	
+	
+
+	<div id="area-principal">
+
+		<div id="area-postagens">
+			
+			
+			<div class="postagem">
+				<h2>Aproximadamente R$ 100 bilhões dos investimentos em saúde em 2017 foram desperdiçados</h2>
+				<span class="data-postagem">Postado 6 março 2017</span>
+				<img class="imagem_1" width="600px" src="imagens/medicamento.jpg">
+				<p>
+						O sistema de saúde no Brasil vive um paradoxo. Enquanto milhões de brasileiros sofrem com a falta de médicos, leitos e medicamentos nos hospitais, 
+						o setor desperdiça uma quantia bilionária com procedimentos malfeitos, 
+						exames desnecessários, erros médicos e ambu	latoriais, excesso de consumo de materiais e fraudes.
+				</p>
+				<a href="http://www.cremepe.org.br/2018/03/12/aproximadamente-r-100-bilhoes-dos-investimentos-em-saude-em-2017-foram-desperdicados/">Leia mais</a>
+			</div>
+
+		
+			<div class="postagem">
+				<h2>SUS joga fora R$ 16 milhões em medicamentos de alto custo</h2>
+				<span class="data-postagem">Postado 28 de agosto 2017</span>
+				<img width="620px" src="imagens/remedios4.jpg">
+				<p>
+						Uma das situações mais graves identificadas pelos auditores da CGU aconteceu na Bahia: entre 2013 e 2014, 
+						cerca de 200 mil comprimidos de Olanzapina (usado no tratamento da esquizofrenia) tiveram de ser jogados fora. 
+						Por um erro de planejamento, os remédios foram comprados e acabaram vencendo antes que os pacientes do Estado pudessem tomá-lo.
+						 No total, foram R$ 3,5 milhões descartados em comprimidos vencidos.
+				</p>
+				<a href="https://www.bbc.com/portuguese/brasil-41007650">Leia mais</a>
+			</div>	
+			
+			<div class="postagem">
+					<h2>Conservação dos medicamentos</h2>
+					<span class="data-postagem">Postado 28 de novembro 2018</span>
+					<img width="620px" src="imagens/foto.png">
+					<p>
+							Uma das situações mais graves identificadas pelos auditores da CGU aconteceu na Bahia: entre 2013 e 2014, 
+							cerca de 200 mil comprimidos de Olanzapina (usado no tratamento da esquizofrenia) tiveram de ser jogados fora. 
+							Por um erro de planejamento, os remédios foram comprados e acabaram vencendo antes que os pacientes do Estado pudessem tomá-lo.
+							 No total, foram R$ 3,5 milhões descartados em comprimidos vencidos.
+					</p>
+					<a href="https://www.portaleducacao.com.br/conteudo/artigos/farmacia/conservacao-dos-medicamentos/6784">Leia mais</a>
+				</div>	
+				
+	
+
+		</div>
+		<div id="area-lateral">
+			
+
+			<div class="conteudo-lateral">
+				<h3>Noticias Sobre o mundo da medicina </h3>
+				
+				<div class="postagem-lateral">
+					<p>O que é Arduino?</p>
+					<a href="https://www.filipeflop.com/blog/o-que-e-arduino/">Leia mais</a>
+				</div>
+
+				<div class="postagem-lateral" style="border-bottom: none;">
+					<p>Sensor: O que é?</p>
+					<a href="https://www.mundodaeletrica.com.br/o-que-sao-sensores-e-quais-as-suas-aplicacoes/">Leia mais</a>
+				</div>
+
+			</div>
+
+			<div class="conteudo-lateral2">
+				<h3>Categorias</h3>
+				
+				<a href="./index.html">Home</a><br>
+				<a href="./login.html">Login</a><br>
+				<a href="./produto.html">Produto	</a><br>
+				<a href="./contato.html">Contato</a><br>
+				<a href="./calculadora.html">Calculadora</a><br>
+				
+
+
+			</div>
+
+
+		</div>
+
+		<div id="rodape">
+			Todos os direitos reservados
+		</div>
+
+	</div>
+
+</body>
+</html>
+<script>
+
+	function logar(){
+
+		if (sessionStorage.logado == 1){
+
+			nodezinho.style.display = 'block';
+			calc.style.display = 'block';
+
+		}
+
+	}
+
+</script>

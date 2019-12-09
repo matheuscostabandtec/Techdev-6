@@ -1,0 +1,337 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0; /* Deixamos a margem e o padding do site em zero , assim zera a formatacao padrao de varios navegadores */
+	padding: 0;
+}
+
+body { 
+	font-size: 1em; /* o tamanho da fonta e de 1em*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif; /* A font da letra e de .../ e por exemplo o arial do word*/
+ 	background-image: linear-gradient(white, #79d1ff,white);
+}
+
+/* Nav Bar*/
+
+
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;  /*O conteúdo é cortado e nenhuma barra de rolagem é exibida.*/ /* o conteudo que estiver dentro ul nao pode ser cortado com essa tag*/
+	background-image: linear-gradient(white, #79d1ff); /*backimage ele e usado para imagem , mas tb para ser usado como um degrade, coloca a primeira cor que vc quer e a segunda logo em seguida , o linnear gradiente ele faz o efeito ficar degrate*/
+	position: -webkit-sticky;/* Ele deixa a posicao da nossa nav bar fixa , de forma que quando rolamos o scroll, ele acompanha*/
+	position: sticky; /* Ele deixa a posicao da nossa nav bar fixa , de forma que quando rolamos o scroll, ele acompanha*/
+	top: 0;
+  }
+  
+  li {
+	float: right;					/* O li esta flutuando na direita */
+  }
+  
+  li a {/* aqui eu disse que os links que estiverem dentro da LI precisam fazer algo*/
+	display: block;      /*O diplay dele esta invisivel*/
+	color: blue;    /*A cor do LINK (A) esta azul*/
+	text-align: center; /* o texto que estiver dentro da li fica no centro*/
+	padding: 14px 16px;
+	text-decoration: none; /* ele deixa a letra com um sublinhado em baixo dela */
+  }
+  
+  li a:hover {
+	background-color:white;
+
+  }
+  
+
+
+
+
+/*
+**** Layout ****
+*/
+#area-cabecalho {
+	background-color: #f7b600;
+	padding: 15px;
+	text-align: center;
+	border: 2px solid black;
+
+}
+
+#area-logo, #area-menu {
+	padding: 8px;
+	text-align: center;
+
+	
+	
+	
+}
+
+#area-principal {
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#area-postagens {
+	width: 660px;
+	float: left;
+}
+
+#area-lateral {
+	width: 240px;
+	float: right;
+}
+
+.postagem{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: rgba(0, 0, 0,0.1);
+}
+
+.conteudo-lateral {
+	background:rgba(0, 0, 0,0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.conteudo-lateral2 {
+	background:  rgba(0, 0, 0,0.1);
+	padding: 12px;
+	margin-top:10
+}
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted  rgba(0, 0, 0,0.1);
+}
+
+#rodape {
+	clear: both;
+	text-align: center;
+	padding: 8px;
+	background:  rgba(0, 0, 0, 0.1);
+}
+
+/*
+**** Formatação do menu ****
+*/
+a {
+	text-decoration: none;	
+}
+
+a:link, a:visited a:hover {
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+	color: blue;
+	background-color: rgb(117, 5, 5);
+	text-decoration: none;
+	border: 4px solid black;
+}
+
+/*
+**** Formatações em geral ****
+*/
+h1 {
+	color: blue;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: blue;
+}
+
+h3 {
+	color: blue;
+	background: #CCC;
+	padding: 5px;
+}
+
+.branco{
+	color: blue;
+}
+
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	display: block;
+}
+.imagem1 {
+	background-image: url(http://www.cremepe.org.br/2018/03/12/aproximadamente-r-100-bilhoes-dos-investimentos-em-saude-em-2017-foram-desperdicados/);
+
+}
+
+.main {
+	margin-left: 390px;	
+	margin-right: 390px;
+	margin-top: 10px;
+	width: auto
+;
+
+}
+
+img.social-img {
+	width: 45px;
+	margin-top: 5px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main p {
+	text-align: center;
+	margin-top: 10px;
+}
+.main h3 {
+	text-align: center;
+	margin-top: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.main h1 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+.tamanho_daniel img {
+	width: 200px;
+	border-radius: 15px;
+	margin-left: 175px;
+	margin-top: 0px;
+	
+}
+
+.tamanho_eve img {
+	width: 200px;
+	border-radius: 15px;
+	margin-left: 175px;
+	margin-top: 0px;
+	
+}
+
+.tamanho_braian img {
+	width: 200px;
+	border-radius: 15px;
+	margin-left: 175px;
+	margin-top: 0px;
+	
+	
+}
+.tamanho_fabio img {
+	width: 200px;
+	border-radius: 15px;
+	margin-left: 175px;
+	margin-top: 0px;
+	
+	
+}
+.tamanho_jp img {
+	width: 200px;
+	border-radius: 15px;
+	margin-left: 175px;
+	margin-top: 0px;
+	
+	
+}
+.tamanho_mateus img {
+	width: 200px;
+	border-radius: 15px;
+	margin-left: 175px;
+	margin-top: 0px;
+	
+	
+}
+
+
+/*  Contato */
+
+
+
+
+.section{
+    background-color: white;
+    border-style: ridge;
+    border-radius: 12px;
+    width: 60%;
+    height: 25vw;
+    margin-left: 1%;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.aside{
+    background-color: white;
+    border-style: ridge;
+    border-radius: 12px;
+    width: 55%;
+    height: 25vw;
+    margin-left: 50%;
+    margin-right: 40%;
+    padding: 10px;
+    margin-top: 10px;
+
+
+}
+
+.coluna_quadrada{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-style: none;
+    border-radius: 20px;
+    width: 70%;
+    height: 30%;
+    margin-top: 30px;
+	background-image: url('thermometer.png');
+	padding: 30px;
+    
+}
+
+.coluna{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-style: none;
+    border-radius: 20px;
+    width: 75%;
+    
+    padding: 30px;
+	margin-top: 0%;
+    margin: 7%;
+    margin-left: 15vw;
+  
+}
+
+.coluna_quadrada2{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-style: none; 
+    border-radius: 20px;
+    width: 60%;
+    height: 30%;
+    margin-left: 35%;
+    background-image: url('thermometer.png');
+	margin-top: 30px;
+	padding: 25px;
+}
+.coluna_quadrada2 img{
+	margin-left: 50px;
+}
+
+
+.texto {
+	margin-bottom: 30px;
+}
+
+.main_produto h1 {
+		text-align: center;
+}

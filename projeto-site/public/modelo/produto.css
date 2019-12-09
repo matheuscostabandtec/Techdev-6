@@ -1,0 +1,75 @@
+
+
+nav{  /* Nav Bar do site */ 
+    background-color: blue;/*Deixamos ela em azul*/
+    border-style: ridge;/*Especifica uma borda sulcada 3D*/
+    border-radius: 12px;/*Deixa a borda mais redonda*/
+    width: 99%;/*A largura esta com 99%*/
+    height: 3vh;/*E a altura com 3vw*/
+    
+
+}
+
+section{
+    background-color: white;/* o fundo esta branco */
+    border-style: ridge;/* Especifica uma borda sulcada */
+    border-radius: 12px;/* borda mais redonda */
+    width: 60%;/* largura de 60 porcent */
+    height: 25vw;/* altura de 25vw */
+    margin-left: 1%;/* A margem a esquerda e de um porcento */
+    padding: 20px;/* A largura de dentro da section e de 20 px */
+    margin-top: 10px;/* A margem do topo de 10 px */
+}
+
+aside{
+    background-color: white;/* fundo branco */
+    border-style: ridge;/* .. */
+    border-radius: 12px;/* .. */
+    width: 55%;/* .. */
+    height: 25vw;/* . */
+    margin-left: 50%;/* .. */
+    margin-right: 40%;/* A margem a direita e de 40porcento */
+    padding: 10px;/*-- */
+    margin-top: 10px;/* -- */
+
+
+}
+
+.coluna_quadrada{
+    background-color:rgba(6, 63, 133, 0.651);/* -- */
+    border-style: none;/* -- */
+    border-radius: 20px;/* -- */
+    width: 60%;/* -- */
+    height: 30%;/* -- */
+    margin-top: 10px;/* - */
+    background-image: url('thermometer.png');/* O background image coloca uma imagem de fundo */
+    
+}
+
+.coluna{
+    background-color: rgba(6, 63, 133, 0.651);/*  */
+    border-style: none;/*e */
+    border-radius: 20px;/* */
+    width: 70%;/*  */
+    height: 80vw;/*  */
+    padding: 30px;/* */
+    margin-top: 5%;/* */
+    margin: 10%;/*  */
+    margin-left: 15vw;/*  */
+  
+}
+
+.coluna_quadrada2{
+    background-color:rgba(6, 63, 133, 0.651);
+    border-style: none;
+    border-radius: 20px;
+    width: 60%;
+    height: 30%;
+    margin-top: 35px;
+    margin-left: 35%;
+    background-image: url('thermometer.png');
+
+}
+
+
+

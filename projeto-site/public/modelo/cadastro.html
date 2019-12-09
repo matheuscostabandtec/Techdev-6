@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+    <link rel="icon" type = "image/x-icon" href="techDev6.png"> <!-- setando o ícone do titulo da página -->
+    <link rel="stylesheet" href="styleCad.css"> <!-- setando o link com o arquivo de css -->
+</head>
+<body>
+        <!-- criando um formulário -->
+        <form>
+          <!-- colocando um header no formulário -->
+            <h1>Cadastro</h1>
+            <!-- criando uma div para conter os outros elementos do formulário -->
+            <div class="containerPai">
+
+              <!-- ********************************************************************** 
+                criando um parágrafo para o e-mail -->
+              <p>
+                <!-- adicionando uma label (rótulo) "E-mail:" ao lado do input email -->
+                <label for="email">E-mail:</label>
+                <!-- adicionando um input para inserção do e-mail -->
+                <input type="text" autofocus placeholder="Insira aqui o seu e-mail de usuário" name="email" id="email">  
+              </p>
+              <!-- fechando o parágrafo do e-mail 
+                ********************************************************************** -->
+
+              <!-- ********************************************************************** 
+                criando um parágrafo para a senha -->
+              <p>
+                
+              <!-- adicionando uma label (rótulo) "Senha:" ao lado do input senha -->
+                <label for="senha">Senha:</label>
+                <!-- adicionando um input para inserção da senha -->
+                <input type="password" placeholder="Insira aqui a sua senha de usuário" name="senha" id="senha">
+              </p>
+              <!-- fechando o parágrafo senha 
+              ********************************************************************** -->
+
+
+              <!-- ********************************************************************** 
+                criando um parágrafo para o nome -->
+              <p>
+                <!-- adicionando uma label (rótulo) "Seu nome:" ao lado do input nome-->
+                <label for="nome">Seu nome:</label>
+                <!-- adicionando um input para inserção do nome do usuário -->
+                <input type="text" placeholder="Insira aqui o seu nome" name="nome" id="nome">
+              </p>
+              <!-- fechando o parágrafo nome 
+              ********************************************************************** -->
+
+              <!-- ********************************************************************** 
+                 criando um parágrafo para o nome do hospital -->
+                 <p>
+                    <!-- adicionando uma label (rótulo) "Nome do Hospital:" ao lado do input hospital -->
+                    <label for="cpf">CPF:</label>
+                    <!-- adicionando um input para inserção do cpf do usuário -->
+                    <input type="text" placeholder="Insira aqui o seu CPF" name="cpf" id="cpf">
+                </p>
+                  
+                  </p>
+                  <!-- fechando o parágrafo hospital
+                    ********************************************************************** -->
+    
+
+              <!-- ********************************************************************** 
+                 criando um parágrafo para o nome do hospital -->
+              <p>
+                <!-- adicionando uma label (rótulo) "Nome do Hospital:" ao lado do input hospital -->
+                <label for="hospital"> Nome do Hospital:</label>
+                <!-- adicionando um input para inserção do nome do hospital -->
+                <input type="text" placeholder="Insira aqui o nome do hospital onde você trabalha" name="hospital" id="hospital">
+
+                <label for="idfuncionario">ID de Funcionário:</label>
+
+                <input class="funcionario" placeholder="Insira aqui o seu ID de Funcionário"  name="idFuncionario" id="idFunc" >
+
+                <button type="button" class="verificar" onclick="verificarID()">Verificar ID</button>
+                
+              </p>
+              <!-- fechando o parágrafo hospital
+                ********************************************************************** -->
+
+              <!-- ********************************************************************** 
+                criando um parágrafo para os botões e demais detalhes -->
+              <p>
+                <!-- adicionando um input do tipo checkbox, para resposta (sim ou não) a receber novidades-->
+                <input type="checkbox" name="novidades" id="novidades">
+                <!-- adicionando uma label (rótulo) "Receber novidades por e-mail?" ao lado da checkbox -->
+                <label for="novidades">Receber novidades por e-mail?</label>
+                <br><br>
+                <!-- adicionando um botão "Entrar", que irá validar as informações do formulário -->
+                <button href="index.html" type="button" class="entrar" onclick="entrar()">Cadastrar</button>
+                <!-- adicionando um botão "Limpar", que irá limpar os campos do formulário -->
+                <button type="button" class="limpar" onclick="limpar()">Limpar</button>
+                <br><br><br>
+                <a class="voltarInicio" href="index.html"> Voltar ao início</a>
+                <!-- adicionando um link "Voltar ao início", que irá levar de volta à página inicial -->
+              </p>
+              <!-- fechando o parágrafo dos botões
+              ********************************************************************** -->
+
+            </div>
+        </form>
+</body>
+</html>
+
+<script>
+
+  var aprovacao = 0;
+
+  // função para limpar os campos do formulário
+    function limpar(){
+
+      email.value = '';
+      senha.value = '';
+      nome.value = '';
+      cpf.value = '';
+      hospital.value = '';
+      idFunc.value = '';
+      email.focus();
+    }
+
+    function verificarID(e){
+
+      console.log(e);
+
+
+      if (hospital.value == 'abc' && idFunc.value == '123'){
+
+        alert ('Hospital e ID de funcionário válidos');
+        aprovacao = 1;
+
+      }   
+      
+      else if (hospital.value == 'Albert Einstein' && idFunc.value == '1234'){
+
+        alert ('Hospital e ID de funcionário válidos::\nNome do Funcionário: Fernando Brandão\nHospital: Hospital Israelita Albert Einstein\nID: 1234');
+        aprovacao = 1;
+
+      }
+
+      else if (hospital.value == 'Albert Sabin' && idFunc.value == '1000'){
+
+        alert ('Hospital e ID de funcionário válidos::\nNome do Funcionário: Marise\nHospital: Hospital Albert Sabin\nID: 1000');
+        aprovacao = 1;
+
+      }
+      
+      else if (hospital.value == 'Beneficência Portuguesa' && idFunc.value == '1111'){
+
+        alert ('Hospital e ID de funcionário válidos:\nNome: Diego Brito\nHospital: Hospital Beneficência Portuguesa\nID: 1111');
+        aprovacao = 1;
+
+      }
+
+
+
+      else{
+
+        alert ('ID de funcionário inválido!')
+        aprovacao = 0;
+
+      }
+
+
+      if (aprovacao == 1){
+
+        idFunc.style.border = '1px solid darkgreen';
+        idFunc.style.background = 'rgb(93, 255, 155)';
+
+        idFunc.className = 'funcionario okPlaceholder';
+
+      }
+      else {
+
+        idFunc.style.border = '1px solid darkred';
+        idFunc.style.background = 'rgb(204, 57, 57)';
+
+        idFunc.className = 'funcionario errorPlaceholder';
+
+      }
+
+    }
+
+    function entrar(){
+
+      if (aprovacao == 1){
+      
+        alert ('Usuário cadastrado com sucesso!');
+      
+      }
+
+      else {
+
+        alert ('Algum campo está incorreto! Verifique e tente novamente!');
+
+      }      
+
+  }
+
+</script>

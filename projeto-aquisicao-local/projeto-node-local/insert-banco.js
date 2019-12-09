@@ -7,7 +7,7 @@
 */ 
 
 // se usar 'true' aqui, os dados serão gerados aleatórios e não recebidos da placa arduíno
-const gerar_dados_aleatorios = true; 
+const gerar_dados_aleatorios = false; 
 
 // leitura dos dados do Arduino
 var porta_serial = require('serialport');

@@ -13,7 +13,8 @@ height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 10px;
+margin-top: 20px;
+margin-bottom: 40px;
 }
 .mySlides {
  float: left;
@@ -23,7 +24,7 @@ margin-top: 10px;
 .botoes_slide{
 float: left;
 position:absolute;
-margin-top:75vh;
+margin-top:50vh;
 width: 85%;
 margin-left: 7.5%;
 }
